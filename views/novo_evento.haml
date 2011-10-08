@@ -1,0 +1,17 @@
+%form{:method => :post, :action => 'evento'}
+  .clearfix
+    %label{:for => :descricao} Descrição
+    .input
+      %input{:id => :descricao, :name => :descricao, :class => :large}
+  .clearfix
+    %label{:for => :data} Data e Hora
+    .input
+      %input{:id => :data, :name => :data, :class => :small}
+      %input{:id => :hora, :name => :hora, :class => :mini}
+  .clearfix
+    %label{:for => :local} Local
+    .input
+      %input{:id => :local, :name => :local, :class => :large}
+  .actions
+    %input{:type => :submit, :class => 'btn primary', :value => 'Gravar'}
+    %input{:type => :reset, :clas => 'btn'} Cancel

@@ -6,6 +6,10 @@ class Site < Sinatra::Base
     haml :index
   end
 
+  get "/evento/novo" do
+    haml :novo_evento
+  end
+
   get "/:css_file.css" do |css_file|
     sass :"../public/css/#{css_file}"
   end
